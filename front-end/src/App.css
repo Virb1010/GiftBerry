@@ -1,0 +1,268 @@
+.App {
+    min-height: 100vh;
+    flex-direction: column;
+    margin-bottom: auto;
+    background-image: url('../assets/BG2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+  }
+
+  .App::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 1; 
+  }
+  
+  body {
+    position: fixed;
+    width: 100%;
+  }
+
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .HomePage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; 
+    max-height: calc(100vh - 56px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 56px;
+    padding-bottom: 25px;
+    z-index: 3;
+  }
+
+  .HomePage::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: auto;
+    margin-bottom: 20px;
+    width: 42rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 2; 
+  }
+
+  .HomePage::-webkit-scrollbar{
+    display: none;
+  }
+
+  .post {
+    margin-top: 30px;
+    cursor: pointer;
+    z-index: 3; 
+  }
+
+  .ViewProfilePage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; 
+    max-height: calc(100vh - 56px);
+    margin-bottom: 20px;
+    padding-top: 56px;
+    padding-bottom: 25px;
+  }
+
+  .ViewProfilePage::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: auto;
+    margin-bottom: 20px;
+    width: 42rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 2; 
+  }
+
+  .ViewProfilePage::-webkit-scrollbar{
+    display: none;
+  }
+
+  .ViewProfilePageFrame {
+    width: 42rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: calc(100vh - 56px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+    z-index: 3;
+  }
+
+  .welcomePage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 56px;
+    z-index: 3;
+  }
+
+  .interestList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .interestListButtons {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 3rem;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    gap: 5px;
+  }
+
+  .customCheckbox {
+    transform: scale(1.75);
+  }
+
+  .slidecontainer {
+    width: 80%; /* Width of the outside container */
+    padding-top: 10px;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #d9534f;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+  .welcomePage {
+    width: 100%;
+    overflow-y: auto; 
+    max-height: calc(100vh - 56px);
+    margin-bottom: 20px;
+    padding-top: 56px;
+    padding-bottom: 25px;
+    z-index: 3;
+  }
+
+  .welcomePageFrame {
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; 
+    max-height: calc(100vh - 56px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2); 
+  }
+
+  .userDetailsContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 0 0.2rem #d9534f;
+  }
+
+  .editProfilePage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; 
+    max-height: calc(100vh - 56px);
+    margin-bottom: 20px;
+    padding-top: 56px;
+    padding-bottom: 25px;
+    z-index: 3;
+  }
+
+  .editProfilePage::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: auto;
+    /* margin-bottom: 20px; */
+    width: 42rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 2;
+  }
+
+  .editProfilePage::-webkit-scrollbar{
+    display: none;
+  }
+
+  .editProfileContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 0 0.2rem #ffff;
+    z-index: 3;
+  }
+
+  .userInfoRow {
+    display: flex;
+    flex-direction: row; 
+  }
+
+  .customBorder {
+    box-shadow: 0 0 0 0.1rem #d9534f;
+  }
+
+  #individual {
+    height: 500px;
+    width: 600px;
+  }
+  
+  #individual .title,
+  #individual .footer {
+    font-size: 30px;
+  }
+  
+  #individual .body {
+    font-size: 25px;
+  }
